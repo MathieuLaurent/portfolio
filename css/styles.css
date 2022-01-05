@@ -1,0 +1,417 @@
+@font-face{
+    font-family: typewcond; 
+    src:url('typewcond_regular.otf') ;
+}
+html{
+    background-color: rgb(236, 235, 235);
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 48px !important;
+}
+h2{
+    font-size: 24px !important;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secteur{
+    text-align: center;
+    font-family: typewcond;
+    font-size: 36px !important;
+}
+
+
+
+/**** Partie Accueil *****/
+
+header{
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.menu a{
+    font-family: typewcond;
+    margin-left: 3%;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    background:linear-gradient(to top, rgb(255, 255, 255)0%, rgb(255, 255, 255), transparent 2px) no-repeat;
+    background-size:0 100%;
+    transition: background-size .3s;
+}
+.menu a:hover{
+    background-size: 100% 100%;
+}
+.menu{
+    width: 500px;
+    margin-left: 65%;
+    display: flex;
+    margin-top: 1%;
+    background:rgba(48,59,91, 0.8);
+    border-radius: 10px ;
+    padding-bottom: 0.3%;
+    position: relative;
+    z-index: 150;
+}
+
+.accueil{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(65, 65, 65, 0.8)),url('../img/accueilBlue.jpg') no-repeat;
+    text-align: center;
+    font-family:  typewcond;
+    padding-top: 23%;
+    padding-left: 3%;
+    height: 100vh;
+    color:white;
+    background-size:cover;
+}
+
+/*** Partie présentation ***/
+
+.blocPresentation{
+    margin-top: 2%;
+    height: 90vh;
+    padding-top: 5%;
+}
+
+#pdp{
+    height: 400px;
+    width: auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.blocDroitePresentation{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    height: 400px;
+    font-family:  typewcond;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+.blocDroitePresentation h2{
+    text-align: center;
+}
+
+/*****Inter****/
+
+.inter{
+    height: 10vh;
+    background-color: rgba(245, 245, 245, 0.945);
+}
+.inter h2{
+    text-align: center;
+    font-family: typewcond;
+    padding-top: 1.5%;
+    color:black;
+}
+
+/*** Partie Compétences ***/
+
+.blocGaucheCompetence img{
+    height: 125px;
+    width: auto;
+    margin-top: 10%;
+    
+}
+
+.blocGaucheCompetence{
+    width: 49%;
+}
+.blocDroiteCompetence{
+    margin-left: 10%;
+}
+.competences{
+    display: flex;
+    background-color:white;
+    padding-top:2%;
+    padding-bottom: 2%;
+    height: 120vh;
+    text-align: center;
+}
+
+#telecharger{
+    margin-top: 2%;
+    font-size: 20px;
+    background-color: #303b5b;
+    border: 1px solid #303b5b;
+    font-family: typewcond;
+}
+
+#telecharger a{
+    text-decoration: none;
+    color:white
+}
+#telecharger:hover{
+    background-color: #4f6094;
+}
+
+
+/*** Réalisations ***/
+
+.realisation{
+    height: 100vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display:flex;
+}
+
+.Ellzacandle{
+    background-image: url(../img/ellzacandle.png);
+}
+.Streamerview{
+    background-image: url(../img/streamerView.png);
+}
+.Portfolio{
+    background-image: url(../img/portfolio.png);
+}
+
+.card{
+    background-size: cover;
+    margin-left: 12%;
+    margin-top: 5%;
+    height: 70%;
+    width: 20%;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card-content{
+    margin:1rem;
+    --padding:1.5rem;
+    height: 93%;
+    padding: var(--padding);
+    background:rgba(250,250,250,0.85);
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}
+
+.card-title{
+    position: relative;
+    width: max-content;
+    color: black;
+    font-family: typewcond;
+}
+
+.card-title::after{
+    content:"";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    background-color: #303b5b;
+    left: 0;
+    bottom:0;
+    left: calc(var(--padding) * -1);
+    transform-origin:left;
+    transition: transform 500ms ease;
+    transition-delay:500ms;
+}
+.card-body{
+    color:rgba(0, 0, 0, 0.85);
+    margin-top: 10%;
+    text-align: justify;
+}
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #303b5b;
+    padding: .5em 1.25em;
+    border-radius: 0.25rem;
+    margin-top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25%;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+.button:hover, button:focus{
+    background-color: #4f6094;
+}
+
+/***** Contact *******/
+
+.contact{
+    height: 80vh;
+    background:rgba(250,250,250,0.8);
+    padding-top: 2%;
+}
+
+.form-style-9{
+	max-width: 450px;
+	background: #303b5b;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+    border-radius: 5px;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	background-color: #dbdbdb;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	padding: 8px 18px;
+	text-decoration: none;
+    margin-left: 37%;
+	font: 16px typewcond;
+    border-radius:5px;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #4f6094 5%, #4f6094 100%);
+    color:white;
+}
+
+.label-style{
+    font-family: typewcond;
+    color:white;
+}
+
+/***** Media query******/
+
+/** Propriété réalisations **/
+@media(hover){
+    .card-content{
+        transform: translateX(-120%);
+        transition: transform 500ms ease;
+    }
+    .card-content > * {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+    
+    .card:hover .card-content > *{
+        opacity: 1;
+    }
+    .card-title::after{
+        transform: scaleX(0);
+    }
+    .card:hover{
+        transform: scale(1.05);
+    }
+    .card:hover .card-content{
+        transform: translateX(0);
+    }
+    
+    .card:hover .card-title::after{
+        transform: scaleX(1);
+    }
+}
+
+@media(max-width:767px){
+    .menu{
+        float:left;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        padding: 7px;
+        z-index: 2;
+        position: relative;
+    }
+    .accueil{
+        background:rgb(0, 0, 0) !important;
+        padding-top: 50%;
+        height: 700px;
+    }
+    h1{
+        font-size: 36px !important;
+    }
+    h2{
+        font-size: 24px !important;
+    }
+
+    .blocPresentation{
+        height: max-content;
+        margin-bottom: 4%;
+    }
+
+    #pdp{
+        z-index: -150;
+        position: relative;
+        height: 250px;
+        width: auto;
+        margin-left: 20%;
+    }
+    .blocDroitePresentation{
+        margin-left: 20%;
+        height: max-content;
+        width: 75%;
+    }
+
+    .competences{
+        height: max-content;
+    }
+
+    .blocGaucheCompetence img{
+        height: 50px;
+        width: auto;
+        margin-top: 5%;
+    }
+
+    .realisation{
+        flex-direction: column;
+        height: max-content;
+    }
+    .card{
+        width: 75%;
+    }
+}
+
+@media(max-width:550px){
+
+    #pdp{
+        z-index: -150;
+        position: relative;
+        height: 250px;
+        width: auto;
+        margin-left: 2%;
+    }
+
+
+}
