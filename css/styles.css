@@ -131,9 +131,20 @@ header{
     background-color:white;
     padding-top:2%;
     padding-bottom: 2%;
-    height: 120vh;
+    height: 100vh;
     text-align: center;
 }
+
+#imgCV{
+    height: 630px;
+    width: auto;
+}
+#mobileImg{
+    display: none;
+    font-family: typewcond;
+    margin-top: 30%;
+}
+
 
 #telecharger{
     margin-top: 2%;
@@ -374,7 +385,7 @@ header{
     #pdp{
         z-index: -150;
         position: relative;
-        height: 250px;
+        height: 200px !important;
         width: auto;
         margin-left: 20%;
     }
@@ -392,6 +403,14 @@ header{
         height: 50px;
         width: auto;
         margin-top: 5%;
+    }
+    
+    #imgCV{
+        display: none;
+    }
+
+    #mobileImg{
+        display: block;
     }
 
     .realisation{

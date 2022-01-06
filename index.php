@@ -27,7 +27,7 @@
         <div class="presentation" id="presentation">
             <h2 class="secteur" style="margin-top: 2%;">Présentation</h2>
             <div class="blocPresentation">
-                <img src="img/photoMath.jpg" alt="photo de profil" id="pdp" class="slide">
+                <img src="img/photoFlou.jpg" alt="photo de profil" id="pdp" class="slide" style="height: 350px;width:auto;">
                 <div class="blocDroitePresentation">
                     <h2>Je me présente, Mathieu Laurent a votre service</h2>
                     <br>
@@ -66,9 +66,10 @@
                 <img src="img/symfony.png" alt="symfony" id="symfony">
             </div>
             <div class="blocDroiteCompetence">
-                <img src="img/photoCV.png" alt="CV">
+                <img src="img/CV_Laurent_Mathieu_V2.png" alt="CV" id="imgCV">
+                <span id="mobileImg">N'hésitez pas à télécharger mon CV!</span>
                 <br>
-                <button id="telecharger"><a href="download/CV_Laurent_Mathieu.pdf" download="CV_Laurent_Mathieu.pdf">Télécharger</a></button>
+                <button id="telecharger"><a href="download/CV_Laurent_Mathieu_V2.pdf" download="CV_Laurent_Mathieu.pdf">Télécharger</a></button>
             </div>
         </div>
         
